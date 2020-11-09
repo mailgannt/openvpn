@@ -10,4 +10,6 @@ This bash script will automate and reduce the time aqnd process of client config
 
 # Credits
 Created by: mailgannt
-Date: 10-November-2020
+
+# Creation Date
+10-November-2020
