@@ -93,11 +93,9 @@ cp /tmp/$newClient.crt ~/vpnclient/keys/
 cd ~/vpnclient
 ./make_config.sh $newClient
 if [[ $? -eq 0 ]]; then
-        echo $?
 	echo "The open vpn client configuration is successfully created."
 	echo "Please download the file at /home/$caUser/vpnclient/files."
 else
-        echo $?
 	exit 1
 fi
 # ---
