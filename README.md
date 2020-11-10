@@ -1,4 +1,4 @@
-# openVPN.RPi4
+# openvpn
 openvpn_Client.sh
 
 # What is this script all about?
