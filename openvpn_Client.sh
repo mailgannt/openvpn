@@ -75,7 +75,7 @@ sshTunnelOp $ssh_cfg $caUser $caHostname;
 scp -F "$ssh_cfg" "$host_path" $caUser@$caHostname:"$target_path"
 
 # Importing and signing the CSR::
-ssh -F "$ssh_cfg" $caUser@$caHostnameS -T <<ENDSSH
+ssh -F "$ssh_cfg" $caUser@$caHostname -T <<ENDSSH
 cd ~/easy-rsa;
 ./easyrsa import-req /tmp/"$newClient".req "$newClient";
 cat << EOF | ./easyrsa sign-req client "$newClient";
